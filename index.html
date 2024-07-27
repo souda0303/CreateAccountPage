@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="semi-oval"></div>
+    <div class="main-container-wrapper">
+      <div class="main-container">
+        <div class="left-side">
+          <div class="background-black">
+            <div class="text-overlay">
+              <h2>Sample heading</h2>
+              <ol>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>Adipisicing elit tempore dolorem</li>
+                <li>
+                  Labore distinctio incidunt quae voluptas tempore dolorem
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <form id="account-form">
+            <h2>Create an account</h2>
+            <div class="form-group">
+              <label class="group-header" for="email">Enter your email:</label>
+              <input type="text" id="email" name="email" />
+              <span id="email-error" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="group-header" for="dob">Date of birth <small>(Optional)</small>:</label>
+              <div class="dob-container">
+                <div class="dob-field">
+                  <label for="day">Date</label>
+                  <input type="number" id="day" name="day" placeholder="03" />
+                </div>
+                <div class="dob-field arrow">
+                  <label for="month">Month</label>
+                  <select id="month" name="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                </div>
+                <div class="dob-field arrow">
+                  <label for="year">Year</label>
+                  <select id="year" name="year">
+                    <!-- Add years dynamically if needed -->
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <!-- Continue adding years as needed -->
+                  </select>
+                </div>
+              </div>
+              <span id="dob-error" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="group-header" for="password">Choose a strong password:</label>
+              <input type="password" id="password" name="password" />
+              <span id="password-error" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label class="group-header">Are you an agency or individual?</label>
+              <div class="user-type-container">
+                <input
+                  type="radio"
+                  id="individual"
+                  name="user-type"
+                  value="individual"
+                />
+                <label for="individual">Individual</label>
+                <input
+                  type="radio"
+                  id="agency"
+                  name="user-type"
+                  value="agency"
+                />
+                <label for="agency">Agency</label>
+              </div>
+              <span id="user-type-error" class="error-message"></span>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
